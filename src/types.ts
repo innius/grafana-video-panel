@@ -1,6 +1,6 @@
 type VideoTypes = 'youtube' | 'url';
 
-export interface SimpleOptions {
+export interface VideoOptions {
   videoType: VideoTypes;
   videoURL: string;
   youtubeVideoId: string;

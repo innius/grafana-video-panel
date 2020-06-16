@@ -1,13 +1,13 @@
 import React from 'react';
 import { PanelProps } from '@grafana/data';
-import { SimpleOptions } from 'types';
+import { VideoOptions } from 'types';
 import { css, cx } from 'emotion';
 import { stylesFactory } from '@grafana/ui';
 import qs from 'query-string';
 
-interface Props extends PanelProps<SimpleOptions> {}
+interface Props extends PanelProps<VideoOptions> {}
 
-export const SimplePanel: React.FC<Props> = ({ options, data, width, height }) => {
+export const VideoPanel: React.FC<Props> = ({ options, data, width, height }) => {
   const styles = getStyles();
 
   const youtubeParams = {

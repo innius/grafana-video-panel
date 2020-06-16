@@ -1,8 +1,8 @@
 import { PanelPlugin } from '@grafana/data';
-import { SimpleOptions } from './types';
-import { SimplePanel } from './SimplePanel';
+import { VideoOptions } from './types';
+import { VideoPanel } from './VideoPanel';
 
-export const plugin = new PanelPlugin<SimpleOptions>(SimplePanel).setPanelOptions(builder => {
+export const plugin = new PanelPlugin<VideoOptions>(VideoPanel).setPanelOptions(builder => {
   return builder
     .addRadio({
       path: 'videoType',
