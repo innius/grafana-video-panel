@@ -5,7 +5,7 @@ import { css, cx } from 'emotion';
 import { stylesFactory } from '@grafana/ui';
 import qs from 'query-string';
 
-interface Props extends PanelProps<VideoOptions> {}
+interface Props extends PanelProps<VideoOptions> { }
 
 export const VideoPanel: React.FC<Props> = ({ options, data, width, height }) => {
   const styles = getStyles();
@@ -53,18 +53,19 @@ export const VideoPanel: React.FC<Props> = ({ options, data, width, height }) =>
           <source src={options.videoURL}></source>
         </video>
       ) : (
-        <iframe
-          frameBorder="0"
-          className={cx(
-            styles.video,
-            css`
+          <iframe
+            frameBorder="0"
+            allowFullScreen
+            className={cx(
+              styles.video,
+              css`
               width: ${width}px;
               height: ${height}px;
             `
-          )}
-          src={youtubeVideoURL}
-        ></iframe>
-      )}
+            )}
+            src={youtubeVideoURL}
+          ></iframe>
+        )}
     </div>
   );
 };
