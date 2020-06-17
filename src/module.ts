@@ -18,6 +18,10 @@ export const plugin = new PanelPlugin<VideoOptions>(VideoPanel).setPanelOptions(
             value: 'youtube',
             label: 'Youtube',
           },
+          {
+            value: 'iframe',
+            label: 'Iframe',
+          },
         ],
       },
     })
@@ -30,6 +34,11 @@ export const plugin = new PanelPlugin<VideoOptions>(VideoPanel).setPanelOptions(
       path: 'videoURL',
       name: 'URL',
       showIf: config => config.videoType === 'url',
+    })
+    .addTextInput({
+      path: 'iframeURL',
+      name: 'URL',
+      showIf: config => config.videoType === 'iframe',
     })
     .addBooleanSwitch({
       path: 'autoPlay',

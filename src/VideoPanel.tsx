@@ -9,7 +9,7 @@ interface Props extends PanelProps<VideoOptions> {}
 
 export const VideoPanel: React.FC<Props> = ({ options, data, width, height }) => {
   const styles = getStyles();
-  let youtubeVideoURL = '';
+  let videoURL: any = '';
 
   if (options.videoType === 'youtube') {
     const youtubeParams = {
@@ -26,7 +26,9 @@ export const VideoPanel: React.FC<Props> = ({ options, data, width, height }) =>
       youtubeParams.loop = 1;
     }
 
-    youtubeVideoURL = 'https://www.youtube.com/embed/' + options.youtubeVideoId + '?' + qs.stringify(youtubeParams);
+    videoURL = 'https://www.youtube.com/embed/' + options.youtubeVideoId + '?' + qs.stringify(youtubeParams);
+  } else if (options.videoType === 'iframe') {
+    videoURL = options.iframeURL;
   }
 
   return (
@@ -66,7 +68,7 @@ export const VideoPanel: React.FC<Props> = ({ options, data, width, height }) =>
               height: ${height}px;
             `
           )}
-          src={youtubeVideoURL}
+          src={videoURL}
         ></iframe>
       )}
     </div>
