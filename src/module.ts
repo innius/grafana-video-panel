@@ -44,10 +44,12 @@ export const plugin = new PanelPlugin<VideoOptions>(VideoPanel).setPanelOptions(
       path: 'autoPlay',
       name: 'Auto play video',
       defaultValue: false,
+      showIf: config => config.videoType !== 'iframe',
     })
     .addBooleanSwitch({
       path: 'loop',
       name: 'Loop video',
       defaultValue: false,
+      showIf: config => config.videoType !== 'iframe',
     });
 });
