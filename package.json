@@ -9,7 +9,7 @@
     "watch": "grafana-toolkit plugin:dev --watch"
   },
   "repository": "github:grafana/simple-react-panel",
-  "author": "Loredana Popescu",
+  "author": "Innius",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/grafana/simple-react-panel/issues",
