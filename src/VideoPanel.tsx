@@ -9,22 +9,25 @@ interface Props extends PanelProps<VideoOptions> {}
 
 export const VideoPanel: React.FC<Props> = ({ options, data, width, height }) => {
   const styles = getStyles();
+  let youtubeVideoURL = '';
 
-  const youtubeParams = {
-    loop: 0,
-    autoplay: 0,
-    playlist: options.youtubeVideoId,
-  };
+  if (options.videoType === 'youtube') {
+    const youtubeParams = {
+      loop: 0,
+      autoplay: 0,
+      playlist: options.youtubeVideoId,
+    };
 
-  if (options.autoPlay) {
-    youtubeParams.autoplay = 1;
+    if (options.autoPlay) {
+      youtubeParams.autoplay = 1;
+    }
+
+    if (options.loop) {
+      youtubeParams.loop = 1;
+    }
+
+    youtubeVideoURL = 'https://www.youtube.com/embed/' + options.youtubeVideoId + '?' + qs.stringify(youtubeParams);
   }
-
-  if (options.loop) {
-    youtubeParams.loop = 1;
-  }
-
-  const youtubeVideoURL = 'https://www.youtube.com/embed/' + options.youtubeVideoId + '?' + qs.stringify(youtubeParams);
 
   return (
     <div
