@@ -3,7 +3,7 @@
   "name": "Video Plugin",
   "id": "innius-video-plugin",
   "info": {
-    "description": "Innius Data Source for Grafana",
+    "description": "Video panel for Grafana",
     "author": {
       "name": "Innius",
       "url": "https://innius.com"
