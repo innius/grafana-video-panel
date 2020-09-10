@@ -24,11 +24,11 @@
       }
     ],
     "screenshots": [],
-    "version": "%VERSION%",
+    "version": "0.1.0",
     "updated": "%TODAY%"
   },
   "dependencies": {
-    "grafanaVersion": "6.3.x",
+    "grafanaVersion": "7.0.x",
     "plugins": []
   }
 }
