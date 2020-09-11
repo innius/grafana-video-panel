@@ -13,22 +13,13 @@
       "small": "img/logo.svg",
       "large": "img/logo.svg"
     },
-    "links": [
-      {
-        "name": "Website",
-        "url": "https://github.com/grafana/simple-react-panel"
-      },
-      {
-        "name": "License",
-        "url": "https://github.com/grafana/simple-react-panel/blob/master/LICENSE"
-      }
-    ],
+    "links": [],
     "screenshots": [],
-    "version": "1.0.0",
-    "updated": "2020-06-17"
+    "version": "0.1.1",
+    "updated": "2020-09-11"
   },
   "dependencies": {
-    "grafanaVersion": "6.3.x",
+    "grafanaVersion": "7.0.x",
     "plugins": []
   }
 }

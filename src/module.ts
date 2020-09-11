@@ -6,13 +6,13 @@ export const plugin = new PanelPlugin<VideoOptions>(VideoPanel).setPanelOptions(
   return builder
     .addRadio({
       path: 'videoType',
-      name: 'Type of video',
+      name: 'Source',
       defaultValue: 'url',
       settings: {
         options: [
           {
             value: 'url',
-            label: 'Video url',
+            label: 'URL',
           },
           {
             value: 'youtube',
@@ -27,7 +27,7 @@ export const plugin = new PanelPlugin<VideoOptions>(VideoPanel).setPanelOptions(
     })
     .addTextInput({
       path: 'youtubeVideoId',
-      name: 'Youtube Video ID',
+      name: 'Video ID',
       showIf: config => config.videoType === 'youtube',
     })
     .addTextInput({
@@ -42,13 +42,13 @@ export const plugin = new PanelPlugin<VideoOptions>(VideoPanel).setPanelOptions(
     })
     .addBooleanSwitch({
       path: 'autoPlay',
-      name: 'Auto play video',
+      name: 'Autoplay',
       defaultValue: false,
       showIf: config => config.videoType !== 'iframe',
     })
     .addBooleanSwitch({
       path: 'loop',
-      name: 'Loop video',
+      name: 'Loop',
       defaultValue: false,
       showIf: config => config.videoType !== 'iframe',
     });
