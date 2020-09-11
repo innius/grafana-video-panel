@@ -982,12 +982,12 @@ __webpack_require__.r(__webpack_exports__);
 var plugin = new _grafana_data__WEBPACK_IMPORTED_MODULE_0__["PanelPlugin"](_VideoPanel__WEBPACK_IMPORTED_MODULE_1__["VideoPanel"]).setPanelOptions(function (builder) {
   return builder.addRadio({
     path: 'videoType',
-    name: 'Type of video',
+    name: 'Source',
     defaultValue: 'url',
     settings: {
       options: [{
         value: 'url',
-        label: 'Video url'
+        label: 'URL'
       }, {
         value: 'youtube',
         label: 'Youtube'
@@ -998,7 +998,7 @@ var plugin = new _grafana_data__WEBPACK_IMPORTED_MODULE_0__["PanelPlugin"](_Vide
     }
   }).addTextInput({
     path: 'youtubeVideoId',
-    name: 'Youtube Video ID',
+    name: 'Video ID',
     showIf: function showIf(config) {
       return config.videoType === 'youtube';
     }
@@ -1016,14 +1016,14 @@ var plugin = new _grafana_data__WEBPACK_IMPORTED_MODULE_0__["PanelPlugin"](_Vide
     }
   }).addBooleanSwitch({
     path: 'autoPlay',
-    name: 'Auto play video',
+    name: 'Autoplay',
     defaultValue: false,
     showIf: function showIf(config) {
       return config.videoType !== 'iframe';
     }
   }).addBooleanSwitch({
     path: 'loop',
-    name: 'Loop video',
+    name: 'Loop',
     defaultValue: false,
     showIf: function showIf(config) {
       return config.videoType !== 'iframe';
