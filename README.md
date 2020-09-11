@@ -2,7 +2,7 @@
 
 Display an video url, YouTube video or an iframe by including the following configurations.
 
-# Configuration
+# Configuration1
 
 ## For custom Video 
 

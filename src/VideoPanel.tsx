@@ -10,7 +10,7 @@ interface Props extends PanelProps<VideoOptions> {}
 export const VideoPanel: React.FC<Props> = ({ options, data, width, height }) => {
   const styles = getStyles();
   let videoURL: any = '';
-
+  console.log(options);
   if (options.videoType === 'youtube') {
     const youtubeParams = {
       loop: 0,
@@ -51,10 +51,8 @@ export const VideoPanel: React.FC<Props> = ({ options, data, width, height }) =>
             `
           )}
           controls
-          // {options.autoPlay ? autoPlay : }
           autoPlay={options.autoPlay}
           loop={options.loop}
-          // loop
           muted
         >
           <source src={options.videoURL}></source>
