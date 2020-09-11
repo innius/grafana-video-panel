@@ -51,8 +51,10 @@ export const VideoPanel: React.FC<Props> = ({ options, data, width, height }) =>
             `
           )}
           controls
-          autoPlay
-          loop
+          // {options.autoPlay ? autoPlay : }
+          autoPlay={options.autoPlay}
+          loop={options.loop}
+          // loop
           muted
         >
           <source src={options.videoURL}></source>
