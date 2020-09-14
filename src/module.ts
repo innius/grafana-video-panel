@@ -26,7 +26,7 @@ export const plugin = new PanelPlugin<VideoOptions>(VideoPanel).setPanelOptions(
       },
     })
     .addTextInput({
-      path: 'youtubeVideoId',
+      path: 'videoId',
       name: 'Video ID',
       showIf: config => config.videoType === 'youtube',
     })
