@@ -17,6 +17,10 @@
       {
         "name": "Bitbucket",
         "url": "https://bitbucket.org/innius/grafana-video-plugin"
+      },
+      {
+        "name": "MIT License",
+        "url": "https://bitbucket.org/innius/grafana-video-plugin/src/master/LICENSE"
       }
     ],
     "screenshots": [],
