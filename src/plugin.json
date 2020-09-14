@@ -13,7 +13,12 @@
       "small": "img/logo.svg",
       "large": "img/logo.svg"
     },
-    "links": [],
+    "links": [
+      {
+        "name": "Bitbucket",
+        "url": "https://bitbucket.org/innius/grafana-video-plugin"
+      }
+    ],
     "screenshots": [],
     "version": "0.1.11",
     "updated": "%TODAY%"
