@@ -15,7 +15,7 @@ export const VideoPanel: React.FC<Props> = ({ options, data, width, height }) =>
     const youtubeParams = {
       loop: 0,
       autoplay: 0,
-      playlist: options.youtubeVideoId,
+      playlist: options.videoId,
     };
 
     if (options.autoPlay) {
@@ -26,7 +26,7 @@ export const VideoPanel: React.FC<Props> = ({ options, data, width, height }) =>
       youtubeParams.loop = 1;
     }
 
-    videoURL = 'https://www.youtube.com/embed/' + options.youtubeVideoId + '?' + qs.stringify(youtubeParams);
+    videoURL = 'https://www.youtube.com/embed/' + options.videoId + '?' + qs.stringify(youtubeParams);
   } else if (options.videoType === 'iframe') {
     videoURL = options.iframeURL;
   }

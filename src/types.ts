@@ -4,7 +4,7 @@ export interface VideoOptions {
   videoType: VideoTypes;
   videoURL?: string;
   iframeURL?: string;
-  youtubeVideoId?: string;
+  videoId?: string;
   autoPlay: boolean;
   loop: boolean;
 }
