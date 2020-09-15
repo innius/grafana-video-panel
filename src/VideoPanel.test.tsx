@@ -6,19 +6,7 @@ import Adapter from 'enzyme-adapter-react-16';
 Enzyme.configure({ adapter: new Adapter() })
 
 describe('VideoPanel', () => {
-  it('should have created the VideoPanel plugin', () => {
-    const params: any = {
-      options: {
-        videoType: 'url',
-        autoPlay: false,
-        loop: false,
-      },
-    };
-    const videoComponent = VideoPanel(params);
-    expect(videoComponent).toBeTruthy();
-  });
-
-  it('renders a video field when the selected type is video', () => {
+  it('renders a video field when the selected type is video url', () => {
     const component = mockComponent({
       videoType: 'url',
       autoPlay: false,
@@ -28,7 +16,7 @@ describe('VideoPanel', () => {
   });
 
 
-  it('renders an iframe field when the selected type is youtube', () => {
+  it('renders an iframe field when the selected type is youtube id', () => {
     const component = mockComponent({
       videoType: 'youtube',
       autoPlay: false,
@@ -49,7 +37,7 @@ describe('VideoPanel', () => {
     expect(component.find('iframe')).toHaveLength(1);
   });
 
-  it('renders an youtube with autoplay and loop setup true', () => {
+  it('renders an youtube iframe with autoplay and loop true', () => {
     const component = mockComponent({
       videoType: 'youtube',
       videoId: '123',
@@ -62,7 +50,7 @@ describe('VideoPanel', () => {
     expect(iframeSrc).toContain('embed/123')
   });
 
-  it('renders an video with autoplay and loop setup true', () => {
+  it('renders a video with autoplay and loop true', () => {
     const component = mockComponent({
       videoType: 'url',
       autoPlay: true,
@@ -73,9 +61,9 @@ describe('VideoPanel', () => {
     expect(videoControls.autoPlay).toBeTruthy()
   });
 
-  function mockComponent(optionsa: any) {
+  function mockComponent(options: any) {
     const defaultProps: any = {
-      options: optionsa
+      options: options
     }
     return shallow(<VideoPanel {...defaultProps} />)
   }

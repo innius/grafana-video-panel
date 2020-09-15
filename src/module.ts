@@ -1,3 +1,5 @@
+/* istanbul ignore file */
+
 import { PanelPlugin } from '@grafana/data';
 import { VideoOptions } from './types';
 import { VideoPanel } from './VideoPanel';
