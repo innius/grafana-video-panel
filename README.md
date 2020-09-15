@@ -1,4 +1,4 @@
-# Grafana Video Panel
+# Video Panel
 Display a video panel from an URL, Youtube ID, or an iframe.
 
 # Configuration

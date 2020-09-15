@@ -1,6 +1,6 @@
 {
   "type": "panel",
-  "name": "Video Plugin",
+  "name": "Video Panel",
   "id": "innius-video-plugin",
   "info": {
     "description": "A plugin for Grafana that visualize a video panel from an URL, Youtube ID, or an iframe",
