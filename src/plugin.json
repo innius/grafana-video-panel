@@ -26,11 +26,12 @@
       }
     ],
     "screenshots": [],
-    "version": "1.0.0",
+    "version": "1.0.1",
     "updated": "%TODAY%"
   },
   "dependencies": {
     "grafanaVersion": "7.0.x",
     "plugins": []
-  }
+  },
+  "skipDataQuery": true
 }
