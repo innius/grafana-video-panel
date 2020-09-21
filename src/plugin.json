@@ -3,7 +3,7 @@
   "name": "Video Panel",
   "id": "innius-video-panel",
   "info": {
-    "description": "A plugin for Grafana that displays a video panel from an URL, Youtube ID, or an iframe",
+    "description": "A panel to display video from a URL, YouTube ID, or an iFrame.",
     "author": {
       "name": "Innius",
       "url": "https://innius.com"
@@ -12,21 +12,21 @@
       "video"
     ],
     "logos": {
-      "small": "img/logo.svg",  
+      "small": "img/logo.svg",
       "large": "img/logo.svg"
     },
     "links": [
       {
-        "name": "Website",
-        "url": "https://bitbucket.org/innius/grafana-video-plugin"
+        "name": "Project site",
+        "url": "https://github.com/innius/grafana-video-panel"
       },
       {
         "name": "MIT License",
-        "url": "https://bitbucket.org/innius/grafana-video-plugin/src/master/LICENSE"
+        "url": "https://github.com/innius/grafana-video-panel/blob/master/LICENSE"
       }
     ],
     "screenshots": [],
-    "version": "1.0.4",
+    "version": "1.0.5",
     "updated": "%TODAY%"
   },
   "dependencies": {
