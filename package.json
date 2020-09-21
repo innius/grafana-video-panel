@@ -1,5 +1,5 @@
 {
-  "name": "innius-video-plugin",
+  "name": "innius-video-panel",
   "version": "1.0.0",
   "description": "Innius Video Plugin for Grafana",
   "scripts": {
