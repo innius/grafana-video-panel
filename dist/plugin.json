@@ -18,11 +18,11 @@
     "links": [
       {
         "name": "Website",
-        "url": "https://bitbucket.org/innius/grafana-video-plugin"
+        "url": "https://github.com/innius/grafana-video-plugin"
       },
       {
         "name": "MIT License",
-        "url": "https://bitbucket.org/innius/grafana-video-plugin/src/master/LICENSE"
+        "url": "https://github.com/innius/grafana-video-plugin/blob/master/LICENSE"
       }
     ],
     "screenshots": [],
