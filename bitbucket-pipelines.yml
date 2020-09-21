@@ -4,4 +4,4 @@ pipelines:
   default:
     - step:
         script:
-          - git push --mirror git@github.com:innius/grafana-video-plugin.git
+          - git push --mirror git@github.com:innius/grafana-video-panel.git
