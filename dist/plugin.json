@@ -3,7 +3,7 @@
   "name": "Video Panel",
   "id": "innius-video-plugin",
   "info": {
-    "description": "A plugin for Grafana that visualize a video panel from an URL, Youtube ID, or an iframe",
+    "description": "A plugin for Grafana that displays a video panel from an URL, Youtube ID, or an iframe",
     "author": {
       "name": "Innius",
       "url": "https://innius.com"
@@ -12,7 +12,7 @@
       "video"
     ],
     "logos": {
-      "small": "img/logo.svg",
+      "small": "img/logo.svg",  
       "large": "img/logo.svg"
     },
     "links": [
@@ -26,8 +26,8 @@
       }
     ],
     "screenshots": [],
-    "version": "1.0.1",
-    "updated": "2020-09-18"
+    "version": "1.0.0",
+    "updated": "2020-09-21"
   },
   "dependencies": {
     "grafanaVersion": "7.0.x",
