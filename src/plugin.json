@@ -33,6 +33,5 @@
     "grafanaVersion": "7.0.x",
     "plugins": []
   },
-  "skipDataQuery": true,
-  "hiddenQueries": true
+  "skipDataQuery": true
 }
