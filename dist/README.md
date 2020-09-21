@@ -24,4 +24,6 @@ The iFrame source is useful when you're dealing with camera feeds.
 ![screenshot](https://raw.githubusercontent.com/innius/grafana-video-panel/master/src/img/screenshots/iframe.png)
 
 # Installation
-Follow instructions from [Grafana plugin web page](https://grafana.com/grafana/plugins/video-panel/installation)
+1. Go to Grafana Plugins page and search Video Panel by Innius. 
+
+2. The panel is available in the Dashboards section in your Grafana main menu, and can be added like any other core panel in Grafana.

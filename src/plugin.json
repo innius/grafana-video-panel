@@ -25,13 +25,20 @@
         "url": "https://github.com/innius/grafana-video-panel/blob/master/LICENSE"
       }
     ],
-    "screenshots": [],
-    "version": "1.0.5",
+    "screenshots": [
+      {
+        "name": "Examples",
+        "path": "img/examples.png"
+      }
+    ],
+    "version": "1.0.6",
     "updated": "%TODAY%"
   },
   "dependencies": {
-    "grafanaVersion": "7.0.x",
+    "grafanaDependency": ">=7.1.5",
     "plugins": []
   },
   "skipDataQuery": true
 }
+
+
