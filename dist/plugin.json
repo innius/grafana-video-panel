@@ -12,12 +12,12 @@
       "video"
     ],
     "logos": {
-      "small": "img/logo.svg",  
+      "small": "img/logo.svg",
       "large": "img/logo.svg"
     },
     "links": [
       {
-        "name": "Website",
+        "name": "Project site",
         "url": "https://github.com/innius/grafana-video-plugin"
       },
       {
