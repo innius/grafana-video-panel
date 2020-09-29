@@ -14,15 +14,15 @@ export const plugin = new PanelPlugin<VideoOptions>(VideoPanel).setPanelOptions(
         options: [
           {
             value: 'url',
-            label: 'URL',
+            label: 'File',
           },
           {
             value: 'youtube',
-            label: 'Youtube',
+            label: 'YouTube',
           },
           {
             value: 'iframe',
-            label: 'Iframe',
+            label: 'iframe',
           },
         ],
       },
@@ -30,16 +30,28 @@ export const plugin = new PanelPlugin<VideoOptions>(VideoPanel).setPanelOptions(
     .addTextInput({
       path: 'videoId',
       name: 'Video ID',
+      description: 'The value after watch?v= in the URL.',
+      settings: {
+        placeholder: '6OCA_yOn9hE',
+      },
       showIf: config => config.videoType === 'youtube',
     })
     .addTextInput({
       path: 'videoURL',
       name: 'URL',
+      description: 'A URL to a valid video file.',
+      settings: {
+        placeholder: 'https://example.com/video.mp4',
+      },
       showIf: config => config.videoType === 'url',
     })
     .addTextInput({
       path: 'iframeURL',
       name: 'URL',
+      description: 'A valid URL.',
+      settings: {
+        placeholder: 'https://example.com/video',
+      },
       showIf: config => config.videoType === 'iframe',
     })
     .addBooleanSwitch({
