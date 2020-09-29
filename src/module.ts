@@ -30,19 +30,28 @@ export const plugin = new PanelPlugin<VideoOptions>(VideoPanel).setPanelOptions(
     .addTextInput({
       path: 'videoId',
       name: 'Video ID',
-      defaultValue: '6OCA_yOn9hE',
+      description: 'The value after watch?v= in the URL.',
+      settings: {
+        placeholder: '6OCA_yOn9hE',
+      },
       showIf: config => config.videoType === 'youtube',
     })
     .addTextInput({
       path: 'videoURL',
       name: 'URL',
-      defaultValue: 'https://example.com/video.mp4',
+      description: 'A URL to a valid video file.',
+      settings: {
+        placeholder: 'https://example.com/video.mp4',
+      },
       showIf: config => config.videoType === 'url',
     })
     .addTextInput({
       path: 'iframeURL',
       name: 'URL',
-      defaultValue: 'https://example.com/video',
+      description: 'A valid URL.',
+      settings: {
+        placeholder: 'https://example.com/video',
+      },
       showIf: config => config.videoType === 'iframe',
     })
     .addBooleanSwitch({
