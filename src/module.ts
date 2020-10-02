@@ -9,7 +9,7 @@ export const plugin = new PanelPlugin<VideoOptions>(VideoPanel).setPanelOptions(
     .addRadio({
       path: 'videoType',
       name: 'Source',
-      defaultValue: 'url',
+      defaultValue: 'youtube',
       settings: {
         options: [
           {
