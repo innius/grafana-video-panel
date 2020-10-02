@@ -64,7 +64,7 @@ export const plugin = new PanelPlugin<VideoOptions>(VideoPanel).setPanelOptions(
     .addBooleanSwitch({
       path: 'loop',
       name: 'Loop',
-      defaultValue: false,
+      defaultValue: true,
       showIf: config => config.videoType !== 'iframe',
     });
 });
