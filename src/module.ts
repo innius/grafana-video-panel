@@ -31,6 +31,7 @@ export const plugin = new PanelPlugin<VideoOptions>(VideoPanel).setPanelOptions(
       path: 'videoId',
       name: 'Video ID',
       description: 'The value after watch?v= in the URL.',
+      defaultValue: 'lWl2_zC2sDc',
       settings: {
         placeholder: '6OCA_yOn9hE',
       },
@@ -57,7 +58,7 @@ export const plugin = new PanelPlugin<VideoOptions>(VideoPanel).setPanelOptions(
     .addBooleanSwitch({
       path: 'autoPlay',
       name: 'Autoplay',
-      defaultValue: false,
+      defaultValue: true,
       showIf: config => config.videoType !== 'iframe',
     })
     .addBooleanSwitch({

@@ -31,8 +31,8 @@
         "path": "img/examples.png"
       }
     ],
-    "version": "1.0.0",
-    "updated": "2020-09-29"
+    "version": "1.0.1",
+    "updated": "2020-10-02"
   },
   "dependencies": {
     "grafanaDependency": ">=7.1.5",
