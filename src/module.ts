@@ -31,9 +31,9 @@ export const plugin = new PanelPlugin<VideoOptions>(VideoPanel).setPanelOptions(
       path: 'videoId',
       name: 'Video ID',
       description: 'The value after watch?v= in the URL.',
-      defaultValue: 'lWl2_zC2sDc',
+      defaultValue: 'vYZzMk0NkgM',
       settings: {
-        placeholder: '6OCA_yOn9hE',
+        placeholder: 'vYZzMk0NkgM',
       },
       showIf: config => config.videoType === 'youtube',
     })

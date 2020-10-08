@@ -11,7 +11,7 @@ A panel to display video from a URL, YouTube ID, or an iFrame.
 ![screenshot](https://raw.githubusercontent.com/innius/grafana-video-panel/master/src/img/screenshots/video.png)
 
 ### YouTube 
--  `Video ID` : the value after watch?v= in the URL. Eg: `6OCA_yOn9hE`
+-  `Video ID` : the value after watch?v= in the URL. Eg: `vYZzMk0NkgM`
 -  `Autoplay` (optional): autoplay video
 -  `Loop` (optional) : loop video
 
