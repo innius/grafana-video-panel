@@ -60,7 +60,7 @@ export const VideoPanel: React.FC<Props> = ({ options, data, width, height }) =>
       ) : (
         <iframe
           frameBorder="0"
-          allow={ options.geolocate } ? "geolocation" : ""
+          allow={options.geolocate ? 'geolocation' : ''}
           allowFullScreen
           className={cx(
             styles.video,

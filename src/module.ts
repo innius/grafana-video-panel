@@ -31,9 +31,9 @@ export const plugin = new PanelPlugin<VideoOptions>(VideoPanel).setPanelOptions(
       path: 'videoId',
       name: 'Video ID',
       description: 'The value after watch?v= in the URL.',
-      defaultValue: 'vYZzMk0NkgM',
+      defaultValue: 'eQpyJQ2womo',
       settings: {
-        placeholder: 'vYZzMk0NkgM',
+        placeholder: 'eQpyJQ2womo',
       },
       showIf: config => config.videoType === 'youtube',
     })
@@ -70,7 +70,7 @@ export const plugin = new PanelPlugin<VideoOptions>(VideoPanel).setPanelOptions(
     .addBooleanSwitch({
       path: 'geolocate',
       name: 'Geolocate',
-      defaultValue: true,
+      defaultValue: false,
       showIf: config => config.videoType === 'iframe',
     });
 });
