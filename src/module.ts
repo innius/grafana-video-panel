@@ -66,5 +66,11 @@ export const plugin = new PanelPlugin<VideoOptions>(VideoPanel).setPanelOptions(
       name: 'Loop',
       defaultValue: true,
       showIf: config => config.videoType !== 'iframe',
+    })
+    .addBooleanSwitch({
+      path: 'geolocate',
+      name: 'Geolocate',
+      defaultValue: true,
+      showIf: config => config.videoType === 'iframe',
     });
 });
