@@ -59,17 +59,6 @@ describe('VideoPanel', () => {
     expect(videoControls.autoPlay).toBeTruthy();
   });
 
-  it('renders an iframe with geolocate true', () => {
-    const component = mockComponent({
-      videoType: 'iframe',
-      geolocate: true,
-      loop: false,
-    });
-    const videoControls = component.find('video').props();
-    expect(videoControls.loop).toBeTruthy();
-    expect(videoControls.autoPlay).toBeTruthy();
-  });
-
   function mockComponent(options: any) {
     const defaultProps: any = {
       options: options,
