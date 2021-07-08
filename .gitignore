@@ -24,7 +24,7 @@ artifacts/
 work/
 ci/
 e2e-results/
-
+dist/
 # Editors
 .idea
 .DS_Store

@@ -4,7 +4,7 @@ import { PanelPlugin } from '@grafana/data';
 import { VideoOptions } from './types';
 import { VideoPanel } from './VideoPanel';
 
-export const plugin = new PanelPlugin<VideoOptions>(VideoPanel).setPanelOptions(builder => {
+export const plugin = new PanelPlugin<VideoOptions>(VideoPanel).setPanelOptions((builder) => {
   return builder
     .addRadio({
       path: 'videoType',
@@ -35,7 +35,7 @@ export const plugin = new PanelPlugin<VideoOptions>(VideoPanel).setPanelOptions(
       settings: {
         placeholder: 'eQpyJQ2womo',
       },
-      showIf: config => config.videoType === 'youtube',
+      showIf: (config) => config.videoType === 'youtube',
     })
     .addTextInput({
       path: 'videoURL',
@@ -44,7 +44,7 @@ export const plugin = new PanelPlugin<VideoOptions>(VideoPanel).setPanelOptions(
       settings: {
         placeholder: 'https://example.com/video.mp4',
       },
-      showIf: config => config.videoType === 'url',
+      showIf: (config) => config.videoType === 'url',
     })
     .addTextInput({
       path: 'iframeURL',
@@ -53,24 +53,24 @@ export const plugin = new PanelPlugin<VideoOptions>(VideoPanel).setPanelOptions(
       settings: {
         placeholder: 'https://example.com/video',
       },
-      showIf: config => config.videoType === 'iframe',
+      showIf: (config) => config.videoType === 'iframe',
     })
     .addBooleanSwitch({
       path: 'autoPlay',
       name: 'Autoplay',
       defaultValue: true,
-      showIf: config => config.videoType !== 'iframe',
+      showIf: (config) => config.videoType !== 'iframe',
     })
     .addBooleanSwitch({
       path: 'loop',
       name: 'Loop',
       defaultValue: true,
-      showIf: config => config.videoType !== 'iframe',
+      showIf: (config) => config.videoType !== 'iframe',
     })
     .addBooleanSwitch({
       path: 'geolocate',
       name: 'Geolocate',
       defaultValue: false,
-      showIf: config => config.videoType === 'iframe',
+      showIf: (config) => config.videoType === 'iframe',
     });
 });
