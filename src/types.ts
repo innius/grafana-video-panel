@@ -5,6 +5,7 @@ export interface VideoOptions {
   videoURL?: string;
   iframeURL?: string;
   videoId?: string;
+  geolocate?: boolean;
   autoPlay: boolean;
   loop: boolean;
 }

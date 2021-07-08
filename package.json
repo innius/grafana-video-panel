@@ -1,11 +1,12 @@
 {
   "name": "innius-video-panel",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Innius Video Plugin for Grafana",
   "scripts": {
     "build": "grafana-toolkit plugin:build",
     "test": "grafana-toolkit plugin:test",
     "dev": "grafana-toolkit plugin:dev",
+    "sign": "grafana-toolkit plugin:sign",
     "watch": "grafana-toolkit plugin:dev --watch"
   },
   "repository": "github:grafana/simple-react-panel",
@@ -16,16 +17,16 @@
     "email": "plugins@grafana.com"
   },
   "devDependencies": {
-    "@grafana/data": "^7.1.5",
-    "@grafana/toolkit": "^7.1.5",
-    "@grafana/ui": "^7.1.5",
+    "@grafana/data": "^7.5.3",
+    "@grafana/toolkit": "^7.5.3",
+    "@grafana/ui": "^7.5.3",
     "@types/enzyme": "^3.10.6",
     "@types/enzyme-adapter-react-16": "^1.0.6",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.4"
   },
   "engines": {
-    "node": ">=12 <13"
+    "node": ">=12 <15"
   },
   "dependencies": {
     "query-string": "^6.13.1"
