@@ -5,3 +5,9 @@ pipelines:
     - step:
         script:
           - git push --mirror git@github.com:innius/grafana-video-panel.git
+
+  tags:
+    v*:
+      - step:
+          script:
+            - git push git@github.com:innius/grafana-video-panel.git --tags
