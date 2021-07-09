@@ -7,9 +7,10 @@ import qs from 'query-string';
 
 interface Props extends PanelProps<VideoOptions> {}
 
-export const VideoPanel: React.FC<Props> = ({ options, data, width, height }) => {
+export const VideoPanel: React.FC<Props> = ({ options, data, width, height, replaceVariables }) => {
   const styles = getStyles();
-  let videoURL: any = '';
+
+  let videoURL = replaceVariables(options.videoURL || '');
 
   if (options.videoType === 'youtube') {
     const youtubeParams = {
@@ -28,7 +29,7 @@ export const VideoPanel: React.FC<Props> = ({ options, data, width, height }) =>
 
     videoURL = 'https://www.youtube.com/embed/' + options.videoId + '?' + qs.stringify(youtubeParams);
   } else if (options.videoType === 'iframe') {
-    videoURL = options.iframeURL;
+    videoURL = replaceVariables(options.iframeURL || '');
   }
 
   return (
@@ -55,7 +56,7 @@ export const VideoPanel: React.FC<Props> = ({ options, data, width, height }) =>
           loop={options.loop}
           muted
         >
-          <source src={options.videoURL}></source>
+          <source src={videoURL}></source>
         </video>
       ) : (
         <iframe

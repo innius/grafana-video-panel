@@ -59,9 +59,14 @@ describe('VideoPanel', () => {
     expect(videoControls.autoPlay).toBeTruthy();
   });
 
+  function replaceVariables(input: string): string {
+    return input;
+  }
+
   function mockComponent(options: any) {
     const defaultProps: any = {
       options: options,
+      replaceVariables: replaceVariables,
     };
     return shallow(<VideoPanel {...defaultProps} />);
   }
