@@ -13,3 +13,11 @@ geolocation for iframes
 ## v1.0.3 
 
 sign the plugin 
+
+
+## 1.0.4 
+
+- some small textual improvements 
+- add docker-compose file to allow easy testing 
+- support templates in iFrame / Video URL's 
+- support full width for videos

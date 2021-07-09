@@ -5,6 +5,7 @@ A panel to display video from a URL, YouTube ID, or an iFrame.
 
 ### File 
 -  `URL` : the url to a valid video file. Eg: `https://example.com/video.mp4`
+-  Grafana [variables](https://grafana.com/docs/grafana/latest/variables/variable-types/) are supported. For instance: `https://example.com/your-camera-feed?id=${__from}` 
 -  `Autoplay` (optional): autoplay video
 -  `Loop` (optional) : loop video
 
@@ -20,6 +21,7 @@ A panel to display video from a URL, YouTube ID, or an iFrame.
 ### iFrame 
 The iFrame source is useful when you're dealing with camera feeds.
 -  `URL` : the url of the page. Eg: `https://example.com/your-camera-feed`
+-  Grafana [variables](https://grafana.com/docs/grafana/latest/variables/variable-types/) are supported. For instance: `https://example.com/your-camera-feed?id=${__from}` 
 
 ![screenshot](https://raw.githubusercontent.com/innius/grafana-video-panel/master/src/img/screenshots/iframe.png)
 
