@@ -17,16 +17,17 @@
     "email": "plugins@grafana.com"
   },
   "devDependencies": {
-    "@grafana/data": "^7.5.3",
-    "@grafana/toolkit": "^7.5.3",
-    "@grafana/ui": "^7.5.3",
+    "@grafana/data": "latest",
+    "@grafana/toolkit": "latest",
+    "@grafana/ui": "^latest",
+    "@grafana/runtime": "latest",
     "@types/enzyme": "^3.10.6",
     "@types/enzyme-adapter-react-16": "^1.0.6",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.4"
   },
   "engines": {
-    "node": ">=12 <15"
+    "node": ">=14"
   },
   "dependencies": {
     "query-string": "^6.13.1"
