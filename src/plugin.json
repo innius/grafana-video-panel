@@ -1,9 +1,9 @@
 {
   "type": "panel",
-  "name": "Video Panel",
+  "name": "Video",
   "id": "innius-video-panel",
   "info": {
-    "description": "A panel to display video from a URL, YouTube ID, or an iFrame.",
+    "description": "Display video from a URL, YouTube ID, or an iFrame.",
     "author": {
       "name": "Innius",
       "url": "https://innius.com"
