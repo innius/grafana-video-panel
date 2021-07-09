@@ -4,7 +4,7 @@ import { PanelPlugin } from '@grafana/data';
 import { VideoOptions } from './types';
 import { VideoPanel } from './VideoPanel';
 
-export const plugin = new PanelPlugin<VideoOptions>(VideoPanel).setPanelOptions((builder) => {
+export const plugin = new PanelPlugin<VideoOptions>(VideoPanel).setNoPadding().setPanelOptions((builder) => {
   return builder
     .addRadio({
       path: 'videoType',
