@@ -8,4 +8,6 @@ export interface VideoOptions {
   geolocate?: boolean;
   autoPlay: boolean;
   loop: boolean;
+  customBackground: boolean;
+  backgroundColor?: string;
 }

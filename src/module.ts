@@ -56,6 +56,18 @@ export const plugin = new PanelPlugin<VideoOptions>(VideoPanel).setNoPadding().s
       showIf: (config) => config.videoType === 'iframe',
     })
     .addBooleanSwitch({
+      path: 'customBackground',
+      name: 'Custom Background',
+      defaultValue: false,
+      showIf: (config) => config.videoType === 'iframe',
+    })
+    .addColorPicker({
+      path: 'backgroundColor',
+      name: 'Background Color',
+      description: 'The background color for the video',
+      showIf: (config) => config.customBackground && config.videoType === 'iframe',
+    })
+    .addBooleanSwitch({
       path: 'autoPlay',
       name: 'Autoplay',
       defaultValue: true,

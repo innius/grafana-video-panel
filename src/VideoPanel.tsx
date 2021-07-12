@@ -32,6 +32,10 @@ export const VideoPanel: React.FC<Props> = ({ options, data, width, height, repl
     videoURL = replaceVariables(options.iframeURL || '');
   }
 
+  let background = undefined;
+  if (options.customBackground) {
+    background = options.backgroundColor || '';
+  }
   return (
     <div
       className={cx(
@@ -68,6 +72,7 @@ export const VideoPanel: React.FC<Props> = ({ options, data, width, height, repl
             css`
               width: ${width}px;
               height: ${height}px;
+              background: ${background};
             `
           )}
           src={videoURL}
