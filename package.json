@@ -19,7 +19,7 @@
   "devDependencies": {
     "@grafana/data": "latest",
     "@grafana/toolkit": "latest",
-    "@grafana/ui": "^latest",
+    "@grafana/ui": "latest",
     "@grafana/runtime": "latest",
     "@types/enzyme": "^3.10.6",
     "@types/enzyme-adapter-react-16": "^1.0.6",
