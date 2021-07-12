@@ -17,10 +17,10 @@
     "email": "info@innius.com"
   },
   "devDependencies": {
-    "@grafana/data": "latest",
-    "@grafana/runtime": "latest",
-    "@grafana/toolkit": "latest",
-    "@grafana/ui": "latest",
+    "@grafana/data": "8.02",
+    "@grafana/runtime": "8.02",
+    "@grafana/toolkit": "8.02",
+    "@grafana/ui": "8.02",
     "@types/enzyme": "^3.10.6",
     "@types/enzyme-adapter-react-16": "^1.0.6",
     "enzyme": "^3.11.0",

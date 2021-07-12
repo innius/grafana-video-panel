@@ -1,14 +1,14 @@
 import React from 'react';
-import { PanelProps } from '@grafana/data';
+import { GrafanaTheme, PanelProps } from '@grafana/data';
 import { VideoOptions } from 'types';
 import { css, cx } from '@emotion/css';
-import { stylesFactory } from '@grafana/ui';
+import { useStyles } from '@grafana/ui';
 import qs from 'query-string';
 
 interface Props extends PanelProps<VideoOptions> {}
 
 export const VideoPanel: React.FC<Props> = ({ options, data, width, height, replaceVariables }) => {
-  const styles = getStyles();
+  const styles = useStyles(getStyles);
 
   let videoURL = replaceVariables(options.videoURL || '');
 
@@ -82,7 +82,7 @@ export const VideoPanel: React.FC<Props> = ({ options, data, width, height, repl
   );
 };
 
-const getStyles = stylesFactory(() => {
+const getStyles = (theme: GrafanaTheme) => {
   return {
     wrapper: css`
       position: absolute;
@@ -92,4 +92,4 @@ const getStyles = stylesFactory(() => {
       left: 0;
     `,
   };
-});
+};
