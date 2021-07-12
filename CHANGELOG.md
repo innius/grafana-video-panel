@@ -2,22 +2,29 @@
 
 All notable changes to this project will be documented in this file.
 
-## v1.0.0
+## v1.0.5 
 
-Initial Release
+- enable custom background colors for iframe control
 
-## v1.0.2 
+## v1.0.4 
 
-geolocation for iframes
+- some small textual improvements 
+- add docker-compose file to allow easy testing 
+- support templates in iFrame / Video URL's 
+- support full width for videos
+
 
 ## v1.0.3 
 
 sign the plugin 
 
 
-## 1.0.4 
+## v1.0.2 
 
-- some small textual improvements 
-- add docker-compose file to allow easy testing 
-- support templates in iFrame / Video URL's 
-- support full width for videos
+geolocation for iframes
+
+
+## v1.0.0
+
+Initial Release
+
