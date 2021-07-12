@@ -1,7 +1,7 @@
 import React from 'react';
 import { PanelProps } from '@grafana/data';
 import { VideoOptions } from 'types';
-import { css, cx } from 'emotion';
+import { css, cx } from '@emotion/css';
 import { stylesFactory } from '@grafana/ui';
 import qs from 'query-string';
 
