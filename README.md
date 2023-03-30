@@ -1,7 +1,12 @@
 # Video Panel
 A panel to display video from a URL, YouTube ID, or an iFrame. 
 
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/innius/grafana-video-panel?logo=github)
+[![Marketplace](https://img.shields.io/badge/dynamic/json?logo=grafana&color=F47A20&label=marketplace&prefix=v&query=version&url=https%3A%2F%2Fgrafana.com%2Fapi%2Fplugins%2Finnius-video-panel)](https://grafana.com/grafana/plugins/innius-video-panel)
+[![Downloads](https://img.shields.io/badge/dynamic/json?logo=grafana&color=F47A20&label=downloads&query=downloads&url=https%3A%2F%2Fgrafana.com%2Fapi%2Fplugins%2Finnius-video-panel)](https://grafana.com/grafana/plugins/innius-video-panel)
+
 # Configuration
+
 
 ### File 
 -  `URL` : the url to a valid video file. Eg: `https://example.com/video.mp4`

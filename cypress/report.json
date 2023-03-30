@@ -1,0 +1,74 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-04-03T13:04:05.807Z",
+    "end": "2023-04-03T13:04:10.061Z",
+    "duration": 4254
+  },
+  "tests": [
+    {
+      "title": "foo",
+      "fullTitle": "foo foo",
+      "duration": 2068,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "temporary",
+      "fullTitle": "foo temporary",
+      "duration": 20,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Smoke test",
+      "fullTitle": "Smoke test Smoke test",
+      "duration": 990,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "temporary",
+      "fullTitle": "Smoke test temporary",
+      "duration": 28,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "foo",
+      "fullTitle": "foo foo",
+      "duration": 2068,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "temporary",
+      "fullTitle": "foo temporary",
+      "duration": 20,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Smoke test",
+      "fullTitle": "Smoke test Smoke test",
+      "duration": 990,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "temporary",
+      "fullTitle": "Smoke test temporary",
+      "duration": 28,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
