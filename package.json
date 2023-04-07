@@ -1,6 +1,6 @@
 {
   "name": "innius-video-panel",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Innius Video Plugin for Grafana",
   "scripts": {
     "build": "webpack -c ./.config/webpack/webpack.config.ts --env production",
